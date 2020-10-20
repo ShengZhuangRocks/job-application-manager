@@ -31,4 +31,5 @@ status is useful for sorting applications, to really focus on those applications
 ## How to use
 
 $ yarn add // to add dependencies for the first time
+
 $ yarn dev // to start the app
