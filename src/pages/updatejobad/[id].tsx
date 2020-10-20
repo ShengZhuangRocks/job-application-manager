@@ -53,6 +53,7 @@ const Updatejobad: React.FC<UpdatejobadProps> = ({}) => {
                 <Box>
                   <InputField label="Title" name="title" />
                 </Box>
+                {/* TODO: add more fields */}
                 <Button type="submit" mt={4} variantColor="teal">
                   Submit
                 </Button>

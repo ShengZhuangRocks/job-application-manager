@@ -1,23 +1,34 @@
-# Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui)
+# Job application managing app
 
-This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app.
+This app is built for managing job applications, still in building process
 
-We are connecting the Next.js `_app.js` with `chakra-ui`'s Theme and ColorMode containers so the pages can have app-wide dark/light mode. We are also creating some components which shows the usage of `chakra-ui`'s style props.
+I am looking for a web developer job right now, I need to send out quite many applications every week, it is hard to manage all those job applications, recruiter contacts, interviews in one place, so I think why not build a such app by myself.
 
-## Deploy your own
+stack: React, Nextjs, Apollo, Graphql, Typescript, Chakra-ui
 
-Deploy the example using [Vercel](https://vercel.com):
+## it can scrape job ad info from internet
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/next.js/tree/canary/examples/with-chakra-ui)
+At first, I was thinking using indeed open Api, but it is closed for registration, so all I can think is to scrape data from recruiter site like: indeed and seek.
+
+a url can be submitted to app, and it will fetch job ad info from the page, and save the basic data to database. This method is not so aggressive in scraping data, as I don't want to be blocked by Seek or Indeed.
+
+## it can update and show some key requirements or infomation that stand out for the user's attention
+
+it is not so realistic to read and remember the whole job ad, it is good that some key infomation would popup.
+
+## it can add recruiter contacts to database
+
+every phone call is precious for job searching, it is important that a contact can be saved and showed properly.
+
+## it can add followup events like: interview | phone call | email
+
+it can show time type of the events, and can also add note to the events, like how it is going, what to expect or prepare the next event
+
+## it can update application status like: to be applied | applied | terminated
+
+status is useful for sorting applications, to really focus on those applications that are hopeful
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-chakra-ui with-chakra-ui-app
-# or
-yarn create next-app --example with-chakra-ui with-chakra-ui-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+$ yarn add // to add dependencies for the first time
+$ yarn dev // to start the app
