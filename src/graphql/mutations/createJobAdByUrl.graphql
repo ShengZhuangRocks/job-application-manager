@@ -1,0 +1,11 @@
+mutation CreateAdByUrl($url: String!) {
+  createJobAdByUrl(url: $url) {
+    errors {
+      field
+      message
+    }
+    ad {
+      ...JobAdFrag
+    }
+  }
+}

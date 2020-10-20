@@ -1,0 +1,7 @@
+fragment FollowupFrag on Followup {
+  id
+  date
+  type
+  sumary
+  isCurrentEvent
+}

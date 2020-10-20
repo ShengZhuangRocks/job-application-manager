@@ -1,0 +1,6 @@
+fragment ContactFrag on Contact {
+  id
+  name
+  phone
+  email
+}

@@ -1,0 +1,11 @@
+mutation UpdateJobAd($input: UpdatejobAdInput!) {
+  updateJobAd(input: $input) {
+    errors {
+      field
+      message
+    }
+    ad {
+      ...JobAdFrag
+    }
+  }
+}

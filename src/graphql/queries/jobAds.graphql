@@ -1,0 +1,5 @@
+query JobAds {
+  jobAds {
+    ...JobAdFrag
+  }
+}

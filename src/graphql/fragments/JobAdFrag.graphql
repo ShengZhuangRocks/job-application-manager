@@ -1,0 +1,29 @@
+fragment JobAdFrag on JobAd {
+  id
+  title
+  link
+  postedAt
+  city
+  jobType
+  description
+  stacks
+  softSkills
+  degree
+  minYears
+
+  applied
+  appliedAt
+  terminated
+
+  contact {
+    ...ContactFrag
+  }
+
+  company {
+    ...CompanyFrag
+  }
+
+  followups {
+    ...FollowupFrag
+  }
+}
